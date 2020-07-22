@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Qual o seu nome? ")
+        document.write(`O nome <strong>${nome}</strong> tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome todo em caixa alta é: ${nome.toUpperCase()}.<br>`)
+        document.write(`Seu nome todo em caixa baixa é: ${nome.toLowerCase()}.<br><br>`)
+
+        var numero = 1522.700000
+        //variavel.toFixed(2) -> Formata o número com duas casas após o ponto
+        document.write(numero.toFixed(2) + "<br>")
+
+        //Troca o ponto por virgula (transformando do padrão americano para o brasileiro)
+        
+        document.write(numero.toFixed(2).replace('.', ','))
+    </script>
+</body>
+</html>
